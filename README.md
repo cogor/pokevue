@@ -1,29 +1,5 @@
 # pokevue
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+##Pokemon's list with Vue.js and [pokeapi.co](https://pokeapi.co)
+Screenshot
+![alt text](https://i.ibb.co/dgyQSK3/Screenshot-2.png "Logo Title Text 1")
