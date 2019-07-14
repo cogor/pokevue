@@ -3,9 +3,13 @@
         <img alt="Vue logo" src="../assets/pokemon_PNG92.webp">
         <h1>Pokemon's list with Vue.js</h1>
         <div class="list">
-            <div class="item" v-for="(item, index) in list">
-                <h3>{{item.name}}</h3>
-            </div>
+
+                <div class="item" v-for="(item, index) in list">
+                    <router-link :to="{name: 'Pokemon', params: {name: item.name, url: item.url}}">
+                    <h3>{{item.name}}</h3>
+                    </router-link>
+                </div>
+
         </div>
     </div>
 </template>
@@ -33,7 +37,7 @@
     }
 </script>
 
-<style>
+<style scoped>
     img{
         max-width: 200px;
         height: auto;
@@ -51,7 +55,12 @@
         flex-wrap: wrap;
     }
     .item{
-        width: 25%;
+        width: 33%;
+    }
+
+    a{
+        display: flex;
+        text-decoration: none;
         padding: 16px 32px;
         background: #35495e;
         color: #42b983;
@@ -62,14 +71,8 @@
         cursor: pointer;
         transition: all .3s;
     }
-    .item:hover{
-        background: aliceblue;
-        color: #42b983;
-    }
-    .item:hover a{
-        color: #42b983;
-    }
-    a{
-        color: aliceblue;
+    a:hover{
+        color: #35495e;
+        background: #fff;
     }
 </style>
