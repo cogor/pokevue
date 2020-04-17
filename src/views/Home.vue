@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <img alt="Vue logo" src="../assets/pokemon_PNG92.webp">
+        <img alt="Vue logo" src="../assets/logo.png">
         <h1>Pokemon's list with Vue.js</h1>
         <div class="list">
 
